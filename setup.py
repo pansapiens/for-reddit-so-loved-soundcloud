@@ -1,7 +1,7 @@
 from os import path
 from distutils.core import setup
 from setuptools import find_packages
-# from rls import __version__
+from rls import __version__
 here = path.abspath(path.dirname(__file__))
 
 
@@ -21,7 +21,7 @@ def get_requirements():
 
 setup(
     name='rls',
-    version='0.1',  # __version__
+    version=__version__,
     packages=[''],
     url='http://github.com/pansapiens/rls',
     license='MIT',
@@ -38,6 +38,9 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3',
     ],
+    download_url='https://github.com/pansapiens/'
+                 'for-reddit-so-loved-soundcloud/'
+                 'archive/%s.tar.gz' % __version__,
     install_requires=get_requirements(),
     entry_points={
         'console_scripts': [
