@@ -4,6 +4,5 @@ mutagen
 praw
 pytoml
 soundcloud
-scdl
 toolz
 youtube-dl
