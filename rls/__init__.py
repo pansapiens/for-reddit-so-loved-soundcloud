@@ -1,0 +1,4 @@
+__version__ = '0.1'
+
+_REDDIT_CLIENT_ID = "gu5aAOqKFYnUJQ"
+_REDDIT_CLIENT_SECRET = "bJcrJXr0kc4ff9QYrWRJ94Q-ij0"

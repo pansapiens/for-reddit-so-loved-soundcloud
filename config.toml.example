@@ -1,0 +1,10 @@
+[soundcloud]
+# Obtain API key here: https://developers.soundcloud.com/
+# Since SoundCloud isn't giving out keys at the moment,
+# you might need to find one somewhere else (Github ..)
+client_id     = "_GET_A_SECRET_KEY_FROM_SOUNDCLOUD_PASTE_HERE_"
+
+[reddit]
+# Obtain API keys here: https://www.reddit.com/prefs/apps
+client_id     = "_GET_A_CLIENT_KEY_FROM_REDDIT_PASTE_HERE_"
+client_secret = "_GET_A_SECRET_KEY_FROM_REDDIT_PASTE_HERE_"
