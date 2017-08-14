@@ -16,10 +16,6 @@ and downloads any tracks it can get (single track, whole artist or set/playlist)
 * (strictly, this is a feature of the wonderful `youtube-dl` used in the backend that we get for free)
 </small>
 
-## TODO / wishlist
-
-  * Make m3u playlists for 'sets'.
-
 ## Installation
 ```
 virtualenv -p python3 ~/.virtualenvs/rls
@@ -69,3 +65,7 @@ on the associated SoundCloud page (or in `metadata.json`) if you plan to reuse a
 Often musicians and composers post links to Reddit with a statement that "these tracks are under a CC-BY license", but fail to update the license on SoundCloud, making the status of the license potetially unclear. 
 The `--free-only` flag excludes any tracks licensed as `all-rights-reserved` on SoundCloud, allowing
 you to have more certainty that you are downloading only Creative Commons (or similar) licensed tracks.
+
+## TODO / wishlist
+
+  * Make m3u playlists for 'sets'.
