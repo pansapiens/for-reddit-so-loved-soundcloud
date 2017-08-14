@@ -18,9 +18,16 @@ and downloads any tracks it can get (single track, whole artist or set/playlist)
 
 ## Installation
 ```
+pip3 install rls
+```
+
+## Installation (for development)
+```
 virtualenv -p python3 ~/.virtualenvs/rls
 source ~/.virtualenvs/rls/bin/activate
-pip3 install -U -r requirements.txt
+python3 setup.py develop
+
+# pip3 install -U -r requirements.txt
 ```
 
 ## Setup
@@ -35,7 +42,7 @@ Edit config.toml to include required API keys for Reddit (and maybe SoundCloud)
 
 See the help message
 ```
-./rls.py
+./rls
 ```
 
 Search `/r/gamedev` for "soundcloud" and "CC-BY" and download any tracks in links to SoundCloud.
@@ -50,7 +57,12 @@ Search `/r/gamedev` for "soundcloud" and "CC-0" and download only free/open lice
 
 Search `/r/futuresynth` for "soundcloud" and "CC-0", only free/open tracks, output to a directory `/tmp/futuresynth`.
 ```
-./rls search gamedev "soundcloud CC-0" --free-only --output=/tmp/futuresynth
+./rls search futuresynth "soundcloud CC-0" --free-only --output=/tmp/futuresynth
+```
+
+Search `/r/dreampop` posts up to one week old for "soundcloud", download linked tracks.
+```
+./rls search futuresynth "soundcloud" --time=week
 ```
 
 ## A note about music licensing
