@@ -274,8 +274,10 @@ def run_in_console():
         print(docopt(__doc__, argv=['--help']))
         sys.exit()
 
-    with open('config.toml', 'r') as fh:
-        config = AttrDict(toml.load(fh))
+    config = dict()
+    if path.exists('config.xml'):
+        with open('config.toml', 'r') as fh:
+            config = AttrDict(toml.load(fh))
 
     config = set_config_defaults(config)
 
