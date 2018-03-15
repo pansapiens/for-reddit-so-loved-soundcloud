@@ -11,7 +11,7 @@ setup(
     name='rls',
     version=__version__,
     packages=['rls'],
-    url='http://github.com/pansapiens/rls',
+    url='https://github.com/pansapiens/for-reddit-so-loved-soundcloud',
     license='MIT',
     author='Andrew Perry',
     author_email='ajperry@pansapiens.com',
