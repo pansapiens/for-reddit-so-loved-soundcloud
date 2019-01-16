@@ -131,7 +131,7 @@ def download_soundcloud_tracks(sc_url, output_dir=None, free_only=False):
         if track_uri:
             # os.system('youtube-dl --audio-format best "%s"' % track_uri)
             ydl_opts = {'format': 'bestaudio/best'} #,
-                        #'output': out_filename}
+                        #'outtmpl': out_filename}
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
                 exit_code = ydl.download([track_uri])
 
