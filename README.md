@@ -18,11 +18,6 @@ and downloads any tracks it can get (single track, whole artist or set/playlist)
 
 ## Installation
 ```
-pip3 install rls
-```
-
-## Installation (for development)
-```
 virtualenv -p python3 ~/.virtualenvs/rls
 source ~/.virtualenvs/rls/bin/activate
 python3 setup.py develop
